@@ -1,4 +1,3 @@
-<!--page qui faire un calendrier avec tableau en utilisant la fonction date et mktime-->
 <!DOCTYPE html>
 <html>
 <head>

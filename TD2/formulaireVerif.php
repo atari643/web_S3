@@ -27,8 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     isset($_POST['genre']) &&
     isset($_POST['langages'])) 
     {
-        // Le formulaire est valide et bien rempli, appel du traitement
-        // sur les données
         traitement($_POST['prenom'], $_POST['nom'], $_POST['email']);
         echo 'Vous êtes un(e) ' . htmlspecialchars($_POST['genre']);
         echo '<hr>';
@@ -47,14 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     Votre Email&nbsp;:
     <input type="text" name="email" value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
     Votre Genre&nbsp;:
-    <!-- Menu déroulant -->
     <select name="genre">
         <option value="femme">Femme</option>
         <option value="homme">Homme</option>
         <option value="autre">Autre</option>
     </select>
     Vous savez programmer en&nbsp;:
-    <!-- Cases à cocher déjà cocher -->
     <input type="checkbox" name="langages[]" value="html"/> HTML
     <input type="checkbox" name="langages[]" value="css" /> CSS
     <input type="checkbox" name="langages[]" value="js" /> JS
