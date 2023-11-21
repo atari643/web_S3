@@ -7,10 +7,11 @@
 <body>
 <?php
     include("CLASS_SEASON.php");
-    if(isset($_GET["title"])) {
+    session_start();
+    include "../TD5/sessionverif.php";
+    if(isset($_GET["title"]) && isset($_SESSION["name"])) {
         $title = $_GET["title"];
-        $pdo=new PDO("mysql:dbname=etu_qartigala;host=info-titania","qartigala","5asTWrkD");
-        $pdo->query('SET CHARSET UTF8');
+        include 'connect.php';
         $sql ="SELECT `season`.`number`, COUNT(*) as numberEpisode
         FROM `episode` 
             LEFT JOIN `season` ON `season`.`id` = `episode`.`season_id` 

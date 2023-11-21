@@ -1,8 +1,7 @@
 <?php
 
  if(isset($_POST["name"]) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) && isset($_POST["password"]) && isset($_POST["countrys"]) || isset($_POST["otherCountry"])) {
-      $pdo=new PDO("mysql:dbname=etu_qartigala;host=info-titania","qartigala","5asTWrkD");
-      $pdo->query('SET CHARSET UTF8');
+      include 'connect.php';
       if(isset($_POST["otherCountry"])) {
           $sql ="INSERT INTO country (name)
           Value (:name)";

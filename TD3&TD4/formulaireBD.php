@@ -6,6 +6,10 @@
 </head>
 <body>
     <div>
+        <?php
+        session_start();
+        include "../TD5/sessionverif.php";
+        ?>
         <form action="afficherListeSerie.php" method="post">
             <label for="title">Critère initiale serie</label>
             <input type="text" name="title" id="titre">

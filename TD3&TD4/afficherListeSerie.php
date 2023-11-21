@@ -11,6 +11,8 @@
             $numberPage = 1;
             include ("afficherImage.php");
             include ("CLASS_SERIES.php");
+            session_start();
+            include "../TD5/sessionverif.php";
             $title="*";
             $pdo=new PDO("mysql:dbname=etu_qartigala;host=info-titania","qartigala","5asTWrkD");
             $pdo->query('SET CHARSET UTF8');

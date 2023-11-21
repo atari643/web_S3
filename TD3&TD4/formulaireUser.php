@@ -16,8 +16,9 @@
         <select name="countrys" id="country-select">
         <option value="">--Please choose an option--</option>
         <?php 
-        $pdo=new PDO("mysql:dbname=etu_qartigala;host=info-titania","qartigala","5asTWrkD");
-        $pdo->query('SET CHARSET UTF8');
+        include 'connect.php';
+        
+
         $sql ="Select name from country";
         $query = $pdo->prepare($sql);
         $query->execute();
