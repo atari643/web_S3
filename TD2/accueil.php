@@ -19,9 +19,10 @@
         <li><a href="formulaireVerif.php">formulaire</a></li>
         <li><a href="calendrier.php">calendrier</a></li>
     </ul>
-    <h2>TD3</h2>
+    <h2>TD3&TD4</h2>
     <ul>
-        
+        <li><a href="formulaireBD.php">Formulaire Base de donnée</a></li>
+        <li><a href="formulaireUser.php">Formulaire utilisateur</a></li>
     </ul>
 </body>
 </html>
