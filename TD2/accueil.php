@@ -10,19 +10,25 @@
     <h2>TD1</h2>
     <ul>
 
-        <li><a href="date.php">date</a></li>
-        <li><a href="tableMultiplication.php">tableMultiplication</a></li>
+        <li><a href="../TD1/date.php">date</a></li>
+        <li><a href="../TD2/tableMultiplication.php">tableMultiplication</a></li>
     </ul>
     <h2>TD2</h2>
     <ul>
-        <li><a href="calculatrice.php">calculatrice</a></li>
-        <li><a href="formulaireVerif.php">formulaire</a></li>
-        <li><a href="calendrier.php">calendrier</a></li>
+        <li><a href="../TD2/calculatrice.php">calculatrice</a></li>
+        <li><a href="../TD2/formulaireVerif.php">formulaire</a></li>
+        <li><a href="../TD2/calendrier.php">calendrier</a></li>
     </ul>
     <h2>TD3&TD4</h2>
     <ul>
-        <li><a href="formulaireBD.php">Formulaire Base de donnée</a></li>
-        <li><a href="formulaireUser.php">Formulaire utilisateur</a></li>
+        <li><a href="../TD3&TD4/formulaireBD.php">Formulaire Base de donnée</a></li>
+        <li><a href="../TD3&TD4/formulaireUser.php">Formulaire utilisateur</a></li>
+
+    </ul>
+    <h2>TD5</h2>
+    <ul>
+        <li><a href="../TD5/afficherSerieSuivie.php">Serie favori</a></li>
+        <li><a href="../TD5/connexion.php">Connexion</a></li>
     </ul>
 </body>
 </html>

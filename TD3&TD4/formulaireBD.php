@@ -10,11 +10,12 @@
         session_start();
         include "../TD5/sessionverif.php";
         ?>
-        <form action="afficherListeSerie.php" method="post">
+        <form action="afficherListeSerie.php" method="get">
             <label for="title">Critère initiale serie</label>
             <input type="text" name="title" id="titre">
             <button type="submit">recherche</button>
         </form>
+        <a href="../TD5/afficherSerieSuivie.php">Serie favori</a>
         
     </div>
 </body>

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
  if(isset($_POST["name"]) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) && isset($_POST["password"]) && isset($_POST["countrys"]) || isset($_POST["otherCountry"])) {
       include 'connect.php';
       if(isset($_POST["otherCountry"])) {
@@ -26,6 +26,7 @@
       'register_date'=> date('Y/m/d h:i:s', time()), 
       'admin'=>0, 
     'names'=>$selected]);
+        header('Location: ../TD3&TD4/formulaireUser.php');
 
  
 

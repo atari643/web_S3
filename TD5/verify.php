@@ -13,7 +13,7 @@ if($result){
     if($_SESSION['HTTP_REFERER'] == NULL){
         $_SESSION['HTTP_REFERER']=$_SERVER['HTTP_REFERER'];
     }
-    if($_SESSION['HTTP_REFERER'] != 'http://localhost:8800/TD5/connexion.php'){
+    if($_SESSION['HTTP_REFERER'] != 'http://localhost:8800/TD5/connexion.php' && $_SESSION['HTTP_REFERER'] != 'http://localhost:8800/TD5/deconnexion.php'){
         header("Location: " . $_SESSION['HTTP_REFERER']);
     }else if($_SESSION['HTTP_REFERER'] == 'http://localhost:8800/TD5/verify.php'){
         header('Location: ../TD3&TD4/formulaireBD.php');
